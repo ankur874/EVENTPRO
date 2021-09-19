@@ -10,7 +10,7 @@ class AddEvent extends React.Component {
 
     }
     render() {
-        let  isUserLoggedIn=0;
+        let  isUserLoggedIn=1;
 
         return (
             <div className='flex flex-col h-screen justify-between px-6'>
