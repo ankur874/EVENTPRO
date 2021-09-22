@@ -74,7 +74,7 @@ function AddEvent() {
                         <div className='p-1 text-gray-900 font-bolder'>Title</div>
                         <input onChange={(e) => setTitle(e.target.value)} placeholder='Event title' className='text-gray-900 bg-gray-100 p-1.5 title rounded '></input>
                         <div className='p-1 text-gray-900 font-bolder'>Description</div>
-                        <input onChange={(e) => setDescription(e.target.value)} placeholder='Description' rows="5" cols="10" wrap="soft" className='text-gray-900 description leading-2 bg-gray-100 p-1.5 title rounded outline-none'></input>
+                        <textarea onChange={(e) => setDescription(e.target.value)} placeholder='Description' rows="5" cols="10" wrap="soft" className='text-gray-900 description leading-2 bg-gray-100 p-1.5 title rounded outline-none'></textarea>
                     </div >
                     <div className='flex relative flex-col   rounded-xl py-5 justify-start  shadow-md mx-auto p-2   '>
                         <div className='p-1 text-gray-900 font-bolder'>Meeting I'd</div>
@@ -141,7 +141,7 @@ function AddEvent() {
 
             </div >
 
-            <button onClick={() => registerEvent()} style={styles.CreateEventBtn} className=' text-lg text-white  rounded-full font-semibold uppercase h-14 w-6/12'>Create My Event</button>
+            <button onClick={() => registerEvent()} style={styles.CreateEventBtn} className=' text-lg text-white mt-16 rounded-full font-semibold uppercase h-14 w-6/12'>Create My Event</button>
 
 
             <>

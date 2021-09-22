@@ -79,7 +79,16 @@ export default function NavBar() {
 
 
             {
-
+               isUserLoggedIn ?
+               <Link to='/' className="my-2.5 text-gray-700 dark:text-gray-200 text-4xl md:mx-4 md:my-0"><i class="fas fa-user-circle -my-3.5"></i></Link> : <Link to="/login"
+                 className="my-1 text-gray-700 dark:text-gray-200 hover:text-indigo-500 dark:hover:text-indigo-400 md:mx-4 md:my-0"
+                >
+                 <button 
+                   class="bg-purple-500 text-white active:bg-purple-600 font-bold uppercase text-xs px-4 py-2 rounded-full shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                   type="button">
+                   Login / SignUp
+                 </button>
+               </Link>
             }
 
           </div>
