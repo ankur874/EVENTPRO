@@ -30,10 +30,11 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "start": "craco start",
+    "start": "craco start backend/index.js",
     "build": "craco build",
     "test": "craco test",
     "eject": "react-scripts eject"
+    
   },
   "eslintConfig": {
     "extends": [
